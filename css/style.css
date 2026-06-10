@@ -223,7 +223,10 @@ p  { margin-bottom: 1rem; }
 .group__item:hover::before { transform: scaleX(1); }
 .group__item h3 { font-size: 1.02rem; color: var(--black); margin: 0 0 6px; }
 .group__item > span { font-size: 0.86rem; color: var(--gray-metal); line-height: 1.5; }
-.group__item .arr { margin-top: auto; padding-top: 16px; font-family: var(--font-heading); font-weight: 600; font-size: 0.74rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gold-mid); }
+.group__item .arr { margin-top: auto; padding-top: 16px; font-family: var(--font-heading); font-weight: 600; font-size: 0.74rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gold-mid); display: inline-flex; align-items: center; gap: 7px; }
+.group__item .arr svg { width: 13px; height: 13px; transition: transform var(--transition); }
+.group__item:hover .arr svg { transform: translate(3px, -3px); }
+.group__item--main .arr svg { width: 14px; height: 14px; }
 
 /* Logos des sociétés (transparents, sans fond) — zone de hauteur fixe pour aligner */
 .glogo { height: 50px; width: auto; max-width: 100%; object-fit: contain; object-position: left center; align-self: flex-start; margin-bottom: 18px; }
@@ -268,7 +271,7 @@ p  { margin-bottom: 1rem; }
 /* ---------- Footer ---------- */
 .site-footer { background: #141414; color: rgba(255,255,255,0.6); padding-top: 64px; }
 .footer-grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1.2fr; gap: 40px; padding-bottom: 48px; }
-.footer-brand img { height: 40px; margin-bottom: 18px; }
+.footer-brand img { height: 72px; width: auto; margin-bottom: 18px; }
 .footer-brand p { font-size: 0.92rem; max-width: 34ch; }
 .footer-brand .endorse { margin-top: 14px; font-size: 0.82rem; color: rgba(255,255,255,0.5); }
 .footer-brand .endorse a { color: var(--yellow); }
