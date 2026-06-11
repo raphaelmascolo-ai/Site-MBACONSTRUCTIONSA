@@ -19,7 +19,7 @@
     });
     // Fermer le menu si on repasse en grand écran
     window.addEventListener('resize', function () {
-      if (window.innerWidth > 1024 && nav.classList.contains('open')) setMenu(false);
+      if (window.innerWidth > 1080 && nav.classList.contains('open')) setMenu(false);
     });
   }
 
